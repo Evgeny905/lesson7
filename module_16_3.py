@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Path
 from typing import Annotated
 app = FastAPI()
-users = {'1': 'Имя: Example, возраст: 18'}
+users = {1: 'Имя: Example, возраст: 18'}
 @app.get("/users")
 async def users_dict() -> dict:
     return users
